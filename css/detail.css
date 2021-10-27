@@ -1,0 +1,116 @@
+.detail-top
+{
+    width: 1270px;
+    padding-left: 15px;
+    padding-top: 24px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.detail-container
+{
+    display: flex;
+    align-items: center;
+}
+.detail-item{
+    display: flex;
+    position: relative;
+    align-items: center;
+}    
+.detail-item{
+    position: relative;
+    display: flex;
+    height: 40px;
+    color: rgb(128, 128, 137);
+    line-height: 20px;
+    font-size: 17px;
+}
+
+          /*-------------DETAIL-BODY-------------*/
+.detail-body{
+    width: 1270px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.detail-content{
+    display: flex;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+.detail-image{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 444px;
+    height: 444px;
+}
+.divide{
+    margin: 0px 12px;
+    width: 1px;
+    background:rgb(255, 255, 255);
+    padding-left: 2px;
+}
+.title-content{
+    margin: 0px 0px 4px;
+    color: rgb(36, 36, 36);
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
+    width: 800px;
+}
+.icon-content{
+    margin: 0px 8px 0px 0px;
+    display: inline-block;
+}
+.body-content{
+    display: flex;
+    padding: 0px 24px 0px 0px;
+   
+}
+.body-content .left-content .price-and-discount{
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    background-color: rgb(250, 250, 250);
+    padding: 0px 16px 12px;
+}
+.price-product{
+    padding-top: 12px;
+    display: flex;
+    align-items: flex-end;
+    color: rgb(255, 66, 78);
+}
+.current-price{
+    font-size: 32px;
+    line-height: 40px;
+    margin-right: 10px;
+    margin-bottom: -3px;
+    font-weight: 500;
+}
+.cost{
+    color: rgb(128, 128, 137);
+    text-decoration: line-through;
+    font-size: 14px;
+    line-height: 20px;
+}
+.discount-product{
+    font-weight: 400; 
+    margin-left: 8px;
+    border: 1px solid rgb(255, 66, 78);
+    border-radius: 2px;
+    background-color: rgb(255, 240, 241);
+    line-height: 18px;
+    padding: 0px 4px;
+    font-size: 15px;
+}
+.description-product{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.description-content p{
+    margin-top: 15px;
+    margin-bottom: 12px;
+    font-size: 18px;
+}

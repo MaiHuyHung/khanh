@@ -219,6 +219,7 @@
                                 </button>
                             </td>
                             <td>
+                                <!-- truyền ID cho hàm delete -->
                                 <button class="btn btn-primary add-post-btn" onclick='showDeleteModal(`<?php echo $post["id"] ?>`)'>    
                                     Xóa
                                 </button>

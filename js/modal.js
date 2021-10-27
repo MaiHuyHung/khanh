@@ -1,6 +1,7 @@
 
 /*gán giá trị rồi truyền cho input*/
-function showEditModal(id,title,description,current_price,cost,discount,featureImage,category_id){
+function showEditModal(id,title,description,current_price,cost,discount,featureImage,category_id){ //các giá trị được truyền từ manager.php
+  //Lấy các phần tử 
   var editModal = $('#editPostModal');
   var editId = $('#edit-post-id');
   var editTitle = $('#edit-post-title');
@@ -12,33 +13,34 @@ function showEditModal(id,title,description,current_price,cost,discount,featureI
   var editFeatureImage = $('#edit-post-feature-image');
   var editUploadImg = $('#before-edit-post-img');
   var editCategoryId= $('#edit-post-category');
-  editId.val(id);
+  editId.val(id);  //Gán giá trị cho các input
   editTitle.val(title);
   editDescription.val(description);
   editPrice.val(current_price);
   editCost.val(cost);
   editDiscount.val(discount);
+  
   editFeatureImage.attr('value',featureImage);
   editPostImgName.attr('value',featureImage);
-  editUploadImg.attr('src',featureImage);
+  editUploadImg.attr('src',featureImage);//Gán giá trị cho ảnh
   editCategoryId.val(category_id);
   editModal.css('background','rgba(0, 0, 0, 0.5)');
-  editModal.addClass('showedit');
+  editModal.addClass('showedit'); // thêm class showedit để hiện modal
 }
 function hideEditModal(){
   var editModal = $('#editPostModal');
-  editModal.removeClass('showedit');
+  editModal.removeClass('showedit');/// xóaclass showedit để ẩn modal
 }
 function showDeleteModal(id){
   var deleteModal = $('#deletePostModal');
   var deleteId = $('#delete-post-id');
   deleteId.val(id);
   deleteModal.css('background','rgba(0, 0, 0, 0.5)');
-  deleteModal.addClass('show');
+  deleteModal.addClass('showedit');
 }
 function hideDeleteModal(){
   var deleteModal = $('#deletePostModal');
-  deleteModal.removeClass('show');
+  deleteModal.removeClass('showedit');
 }
 
   $(document).ready(function () {

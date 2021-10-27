@@ -14,8 +14,8 @@
     $cost = isset($_REQUEST["edit-post-cost"]) ? $_REQUEST["edit-post-cost"] : "Unknown Cost";
     $discount = isset($_REQUEST["edit-post-discount"]) ? $_REQUEST["edit-post-discount"] : "Unknown";
     $category_id = isset($_REQUEST["edit-post-category"]) ? $_REQUEST["edit-post-category"] : 0;
-    $img = upload_file_by_name("edit-post-feature-image");
     $imgName = upload_file_by_name("edit-post-feature-image");
+    //check xem có up ảnh mới ko , nếu ko thì set imgName = đường dẫn ảnh cũ
     if($imgName == ""){
         $imgName = isset($_REQUEST["edit-post-img-name"]) ? $_REQUEST["edit-post-img-name"] : "";
     }
@@ -51,7 +51,7 @@
 				   <!-- bootstrap v.4 -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
-	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="css/style.css">
     
       	
 </head>

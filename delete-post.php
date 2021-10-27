@@ -2,7 +2,6 @@
     session_start();
     include('lib_db.php');
 	include("util.php");
-    $key = $_SESSION["q"];
     $sql = "select * from product_category";
     $category_list = select_list($sql);
 	$data = array();
@@ -125,7 +124,7 @@
     <div class="container content">
             <div class="message-delete-post">
                 <p>
-                    Xóa bài thành công , quay về <a href='manager.php?p=1&q=<?php echo $key ?>'>Trang quản lý bài viết</a>
+                    Xóa bài thành công , quay về <a href='manager.php?p=1'>Trang quản lý bài viết</a>
                 </p>
             </div>
         </div>
